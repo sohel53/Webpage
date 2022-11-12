@@ -1,0 +1,48 @@
+body {
+    height: 300vh;
+    width: 90vw;
+}
+#navbar {
+    background-color:darkslategray;
+    height: 30px;
+    width:1500px;
+    position: fixed;
+    top: 10;
+    right: 0;
+    z-index: 999;
+}
+h1 {
+    color: rgb(23, 119, 119);
+}
+#button {
+    color:white;
+    background-color:black;
+}
+
+  
+  /* Navbar links */
+  #navbar {
+    float: left;
+    display: block;
+    color:white;
+    text-align: right;
+    padding: 14px;
+    text-decoration:solid;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
